@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">LEGO Survey</h1>
+    </header>
+
+    <main>
+      <section>
+        <p id="description">This is a survey form based on freecodecamp exercise</p>
+      </section>
+
+      <form id="survey-form">
+        <fieldset id="aboutyou">
+          <legend>About You</legend>
+          <label id="name-label" for="name">Your Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required/>
+
+          <label id="email-label" for="email">Your Email:</label>
+          <input id="email" type="email" placeholder="Enter your email" required/>
+
+          <label id="number-label" for="number">Your Fav LEGO Set:</label>
+          <input id="number" type="number" min="1" max="100000" placeholder="Enter set number" required/>
+
+          <label for="dropdown">Do you still collect LEGO?:</label>
+          <select id="dropdown">
+            <option value="">Choose an option</option>
+            <option value="option1">Yes</option>
+            <option value="option2">No</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Do you remember your first set?</legend>
+          <input type="radio" name="remember" value="yes" id="remember-yes">Yes</input>
+          <input type="radio" name="remember" value="no" id="remember-no">No</input>
+        </fieldset>
+
+        <fieldset id="newset">
+          <legend>How do you get new LEGO sets?</legend>
+          <input type="checkbox" name="importance" value="important1" id="importance-1">
+          <label for="importance-1">Important 1</label>
+          <input type="checkbox" name="importance" value="important2" id="importance-2">
+          <label for="importance-2">Important 2</label>
+        </fieldset>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
